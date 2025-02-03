@@ -16,7 +16,7 @@ pub async fn start_server(
         if let Err(e) = handlers::check_game_over(game_state_clone, socket_clone).await {
             eprintln!("Error in game over check: {}", e);
         }
-    });
+    }); 
 
     loop {
         let mut buf = vec![0u8; 4096];

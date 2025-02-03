@@ -22,7 +22,7 @@ pub struct GameState {
     pub is_alive: bool,
     pub game_over_results: Option<(String, Vec<(String, u32)>)>,
 }
-
+        
 impl GameState {
     pub fn new(player_name: String) -> Self {
         Self {
