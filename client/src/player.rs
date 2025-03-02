@@ -30,4 +30,4 @@ pub fn update_bullets(
             *transform = Transform::from_translation(new_translation).with_rotation(transform.rotation);
         }
     }
-}   
+}

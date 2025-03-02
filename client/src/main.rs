@@ -19,7 +19,7 @@ use tokio::runtime::Runtime;
 fn main() -> io::Result<()> {
     println!("Choose server address:");
     println!("1. Use default (0.0.0.0:5000)");
-    println!("2. Enter manually");  
+    println!("2. Enter manually");
     io::stdout().flush()?;
     
     let mut choice = String::new();

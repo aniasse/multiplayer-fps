@@ -19,7 +19,7 @@ impl GameState {
             players: HashMap::new(),
             map: Map::new(difficulty),
             difficulty,
-            game_start_time: Instant::now(),    
+            game_start_time: Instant::now(),
             game_duration: Duration::from_secs(300), // 5 minutes
             rotation: 0.0,
         }

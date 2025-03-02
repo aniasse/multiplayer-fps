@@ -17,7 +17,7 @@ pub async fn handle_message(
     socket: Arc<UdpSocket>,
 ) -> Result<(), Box<dyn std::error::Error>> {
     let mut state = game_state.lock().await;
-    match message { 
+    match message {
         ClientMessage::Join { name } => {
             println!("Player connected: {} (IP: {})", name, addr);
             let spawn_position = state.map.generate_valid_spawn_point();

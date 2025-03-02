@@ -11,7 +11,7 @@ use crate::player::{Bullet, PLAYER_SPEED, SHOOT_COOLDOWN};
 pub struct CursorState {
     pub captured: bool,
 }
-    
+
 #[derive(Resource)]
 pub struct MovementTimer(pub Timer);
 
